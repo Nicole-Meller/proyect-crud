@@ -16,7 +16,7 @@ Body{
 /*----Nav----- */
 /*----------------*/
 nav {
-    background-image: url(../img/portada\ nacional.jpg);
+    background-image: url(./assets/img/portada\ nacional.jpg);
     background-position:center;
     background-size: cover;
     min-height: 70px;
