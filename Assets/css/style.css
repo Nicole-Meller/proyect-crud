@@ -1,0 +1,112 @@
+/*Selección de Colores
+/* 6b9080
+/* a4c3b2
+/* cce3de
+/* eaf4f4
+/* f6fff8*/
+
+Body{
+  background-color:#e7e5e4 ;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------*/
+/*----Nav----- */
+/*----------------*/
+nav {
+    background-image: url(../img/portada\ nacional.jpg);
+    background-position:center;
+    background-size: cover;
+    min-height: 70px;
+    display: flex;
+    align-items:center ;
+    padding: 180px;
+  }
+  .logo img {
+    height: 150px;
+  }
+
+/*----------------*/
+/*----Titulo----- */
+/*----------------*/
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 70px;
+  padding: 40px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  
+  &.elegantshadow {
+    color: #131313;
+    background-color: #e7e5e4;
+    letter-spacing: .15em;
+  }
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+/*----------------*/
+/*----formulario----- */
+/*----------------*/
+
+section form{
+  margin: inherit;
+  margin-bottom: 50px;
+}
+
+section button{
+margin: 10px; 
+}
+
+/*----------------*/
+/*----Tabla----- */
+/*----------------*/
+
+/*Ajustar la columna al contenido */
+.btn-column{
+  width: auto;
+}
+
+.table{
+padding: auto;
+}
+
+/*----------------*/
+/*----Responsive----- */
+/*----------------*/
+
+/*El resto del código responsivo se encuentra desde bootstrap */
+
+@media (max-width: 768px) {
+  /* con esto hago que la imagen del logo se adapte*/
+  .navbar-brand img {
+      width: 80px;
+      height: 80px;
+  }
+  
+  .elegantshadow {
+      font-size: 28px;
+  }
+
+  #formulario {
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+      font-size: 14px;
+  }
+  
+  /* Ajustar el ancho de las columnas en pantallas más pequeñas */
+  #tableData th,
+  #tableData td {
+      padding: 8px;
+      font-size: 12px;
+  }
+}
