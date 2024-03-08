@@ -46,7 +46,7 @@ const enlace = document.getElementById("miLink");
             return false;
         }
         if (book == "") {
-            swal( "Oops","Debes ingresar un lirbo","error" );
+            swal( "Oops","Debes ingresar un libro","error" );
             return false;
         }
         if (time == "") {
@@ -143,7 +143,7 @@ const showData = () => {
         html += '<td>' + element.user + '</td>';
         html += '<td>' + element.book + '</td>';
         html += '<td>' + element.time + '</td>';
-        html += '<td class="btn-column"><button onclick="deleteData('+ index +')" class="btn btn-outline-danger">Eliminar dato</button> <button onclick="updateData('+ index +')" class="btn btn-outline-success">Editar dato</button></td>';
+        html += '<td class="btn-column"><button onclick="deleteData('+ index +')" class="btn btn-outline-danger">Eliminar datos</button> <button onclick="updateData('+ index +')" class="btn btn-outline-success">Editar datos</button></td>';
         html += '</tr>';
     });
 
@@ -206,9 +206,7 @@ const updateData = (index) => {
             document.getElementById("btnGuardar").style.display = 'block';
 
         }
-        
     }
-
 }
 
 const deleteData=(index)=>{
