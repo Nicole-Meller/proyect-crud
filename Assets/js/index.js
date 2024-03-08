@@ -143,7 +143,7 @@ const showData = () => {
         html += '<td>' + element.user + '</td>';
         html += '<td>' + element.book + '</td>';
         html += '<td>' + element.time + '</td>';
-        html += '<td class="btn-column"><button onclick="deleteData('+ index +')" class="btn btn-outline-danger">Eliminar datos</button> <button onclick="updateData('+ index +')" class="btn btn-outline-success">Editar datos</button></td>';
+        html += '<td class="btn-column"><button onclick="deleteData('+ index +')" class="btn btn-outline-danger btn-block">Eliminar datos</button> <button onclick="updateData('+ index +')" class="btn btn-outline-success btn-block">Editar datos</button></td>';
         html += '</tr>';
     });
 

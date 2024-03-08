@@ -77,12 +77,84 @@ padding: auto;
 }
 
 /*----------------*/
+/*---- Footer---- */
+/*----------------*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #e7e5e4;
+  padding: 50px 0 10px 0;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.link {
+  width: 300px;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.link a:hover {
+  color: black;
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: black;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #f7f7f7;
+  font-size: 20px;
+}
+
+hr {
+  border: 1px solid;
+  margin: 35px 0;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text p {
+  font-size: 15px;
+  color: black;
+}
+
+/*----------------*/
 /*----Responsive----- */
 /*----------------*/
 
 /*El resto del código responsivo se encuentra desde bootstrap */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* con esto hago que la imagen del logo se adapte*/
   .navbar-brand img {
       width: 80px;
@@ -96,9 +168,6 @@ padding: auto;
   #formulario {
       margin-top: 20px;
   }
-}
-
-@media (max-width: 768px) {
   .table {
       font-size: 14px;
   }
@@ -107,6 +176,30 @@ padding: auto;
   #tableData th,
   #tableData td {
       padding: 8px;
-      font-size: 12px;
+      font-size: 9px;
   }
+  #tableData {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .swal2-popup {
+    font-size: 1.6rem;
+}
+
+.swal2-modal {
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+  .btn{
+    font-size: 9px;
+  }
+  .btn-column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-column button {
+    margin-bottom: 10px;
+  }
+  
 }
