@@ -179,8 +179,9 @@ hr {
       font-size: 9px;
   }
   #tableData {
-    margin-left: 0;
-    margin-right: 0;
+    display: block;
+    max-height: 200px; 
+    overflow-y: auto; 
   }
   .swal2-popup {
     font-size: 1.6rem;
